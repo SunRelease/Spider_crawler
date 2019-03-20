@@ -1,5 +1,5 @@
 # Sougou_spider
-[chick here]( https://hfg123.github.io/Spider_crawler)
+[chick here](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
       
 1.This is a support wallpaper capture web page, support sogou image capture, and folder classification
 
