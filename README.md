@@ -1,3 +1,16 @@
+# **简介**
+
+> 一些简单的爬虫案例,有助于对爬虫的入门和了解
+
+# **编译环境**
+System|win10
+---
+Python Version|python3.6.2
+---
+Python IDE|VS Code
+---
+
+
 # Sougou_spider
 [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
 
