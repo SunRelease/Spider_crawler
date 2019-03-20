@@ -10,8 +10,8 @@
 
 
 
-# Sougou_spider
-[chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
+# Sougou_spider(搜狗壁纸抓取)
+### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
 
       
 >1.This is a support wallpaper capture web page, support sogou image capture, and folder classification
@@ -22,8 +22,8 @@
 
 ***
 
-# Html_parse
-[chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
+# Html_parse(网页抓取)
+### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
 
 >1.This is a web page parsing folder. It contains xpath,bs4, regular expressions,pyquery use method
 
