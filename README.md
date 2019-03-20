@@ -11,6 +11,15 @@
 
 
 # Sougou_spider(搜狗壁纸抓取)
+
+## **安装所需库**
+```
+pip install requests
+pip install Fake_Useragent
+
+```
+
+
 ### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
 
       
@@ -22,7 +31,20 @@
 
 ***
 
+
+
 # Html_parse(网页抓取)
+
+## **安装所需库**
+```
+
+pip install lxml
+pip install beautifulsoup4
+pip install pyquery
+
+```
+
+
 ### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
 
 >1.This is a web page parsing folder. It contains xpath,bs4, regular expressions,pyquery use method
