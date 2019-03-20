@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# author :HXM
+
 import re,os,requests,json
 from fake_useragent import UserAgent
 import time
@@ -53,7 +56,7 @@ def save_image(item):
 
                     with open (file_path,'wb')as f:
 
-                        f.write(resp.content)
+                        f.write(resp.content)#写入文件
                     
                     print('Downloaded image path is %s' % file_path)
                     
@@ -63,7 +66,7 @@ def save_image(item):
                     print("Download fail",file_path)
 
         except requests.ConnectionError:
-
+#输出错误原因
             print("ConnectionError")
 
             return None
@@ -90,7 +93,7 @@ def image_get(url):
 def main():
 
     url=r'https://pic.sogou.com/pics?query=%B7%E7%BE%B0&mode=1&start=48&reqType=ajax&reqFrom=result&tn=0'
-
+#原网址的获取,可以自定义获取
     html=image_get(url)
 
     for item in image_parser(html):
@@ -100,7 +103,8 @@ def main():
         save_image(item)
 
 GROUP_START = 0
-GROUP_END = 10
+GROUP_END = 10 
+#线程池的建立
 
 if __name__ == '__main__':
     pool = Pool()
@@ -114,3 +118,4 @@ if __name__ == '__main__':
     pool.join()
     
     time.sleep(3)
+#默认休息3秒,防止
