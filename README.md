@@ -3,12 +3,11 @@
 > 一些简单的爬虫案例,有助于对爬虫的入门和了解
 
 # **编译环境**
-System | win10 1803
---- | --- |
-Python Version | python3.6.2
---- | --- |
-Python IDE | VS Code
---- | --- |
+ System | win10 1803 
+---|---
+ Python Version | python3.6.2 |
+ Python IDE | VS Code |
+
 
 
 # Sougou_spider
