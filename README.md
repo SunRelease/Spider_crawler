@@ -32,10 +32,15 @@ pip install Fake_Useragent
       
 >1.This is a support wallpaper capture web page, support sogou image capture, and folder classification
 
->2.Url capture is supported, but only for sogou wallpapers
+>2.**Url capture is supported, but only for sogou wallpapers**
 
 >3.There may be a folder suggestion problem, and I will try to solve the situation first
 
+>4.Optimize the creation of thread pools to prevent downtime(**3-25 update**)
+
+>5.New interactive interface, customizable keywords and pages(**3-25 update**)
+
+>6.GUI interface writing in progress...
 ***
 
 
