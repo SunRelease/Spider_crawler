@@ -23,6 +23,7 @@
 ```
 pip install requests
 pip install Fake_Useragent
+pip install urllib
 
 ```
 
