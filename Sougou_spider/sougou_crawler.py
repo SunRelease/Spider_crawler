@@ -25,7 +25,7 @@ def image_parser(html):
 
                 'image_url' :image_url
                 }#运用generator生成字典
-print('succ1')        
+      
                    
 def save_image(item):
 
