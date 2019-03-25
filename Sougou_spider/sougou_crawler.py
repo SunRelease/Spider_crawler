@@ -32,7 +32,7 @@ def save_image(item):
     img_path = 'imgs' + os.path.sep + item.get('image_title')
     #于上面的函数不一样，只能调用yeild生成器的值，不要用作item.get（‘orinigl_url')
 
-    print("succ2")
+    print("文件路径获取成功!!")
     
     if  img_path[0:50]:#字符串的截取，解决文件名过长的导致无法建立文件夹
        
@@ -52,7 +52,9 @@ def save_image(item):
 
                 if not os.path.exists(file_path):   #谨记加not，建立新文件
 
-                    print('succ3')
+                    print('建立文件夹成功!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+                    
+                    print("path is %s" % file_path)
 
                     with open (file_path,'wb')as f:
 
@@ -60,7 +62,9 @@ def save_image(item):
                     
                     print('Downloaded image path is %s' % file_path)
                     
-                    print('succ4')
+                    print('图片保存成功`!!')
+                    
+                    print("--------------------------------------------------------")
                 else:
 
                     print("Download fail",file_path)
