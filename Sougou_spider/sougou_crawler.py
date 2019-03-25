@@ -92,8 +92,14 @@ def image_get(url):
 
 def main():
 
-    url=r'https://pic.sogou.com/pics?query=%B7%E7%BE%B0&mode=1&start=48&reqType=ajax&reqFrom=result&tn=0'
-#原网址的获取,可以自定义获取
+    word=str(input("请输入抓取关键字:"))
+
+    page=int(input("请输入抓取的页数:"))
+# 优化交互界面
+    words=urllib.parse.quote(word,encoding='gbk')
+
+    url=r'https://pic.sogou.com/pics?query='+words+r'&mode=1&start='+str(page*48)+r'&reqType=ajax&reqFrom=result&tn=0'
+#     重新定义并规划了API接口
     html=image_get(url)
 
     for item in image_parser(html):
@@ -103,14 +109,14 @@ def main():
         save_image(item)
 
 GROUP_START = 0
-GROUP_END = 10 
+GROUP_END = 8
 #线程池的建立
-
+# 减少线程池的数目,降低机器负载,防止宕机
 if __name__ == '__main__':
     pool = Pool()
     
-    groups = ([x * 20 for x in range(GROUP_START, GROUP_END + 1)])
-    
+    groups = ([x * 15 for x in range(GROUP_START, GROUP_END + 1)])
+#     优化线程池
     pool.map(main(), groups)
     
     pool.close()
