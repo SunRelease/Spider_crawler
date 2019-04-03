@@ -28,7 +28,7 @@ pip install urllib
 ```
 
 
-### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
+### [chick here to read source](https://github.com/hfg123/Spider_crawler/blob/master/Sougou_spider/sougou_crawler.py)
 
       
 >1.This is a support wallpaper capture web page, support sogou image capture, and folder classification
@@ -58,8 +58,33 @@ pip install pyquery
 ```
 
 
-### [chick here to know more](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
+### [chick here to read source](https://github.com/hfg123/Spider_crawler/blob/master/Html_parse/Get_ip.py)
 
 >1.This is a web page parsing folder. It contains xpath,bs4, regular expressions,pyquery use method
+
+
+
+# Douban_crawler(豆瓣)
+
+## **安装所需库**
+```
+pip install requests
+
+```
+
+
+### [chick here to read source](https://github.com/hfg123/Spider_crawler/blob/master/Douban/douban_spider.py)
+
+>1.这是一个关于豆瓣抓取的简单爬虫
+
+>2.默认以csv文件生成在文件夹中,顺序为ID, title ,rate ,url
+
+>3.如果想修改抓取抓取页数,**请参照84行文档修改案例**
+
+
+
+
+
+
 
 
