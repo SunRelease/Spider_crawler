@@ -7,22 +7,23 @@
 
 
 
-> 一些简单的爬虫案例,有助于对爬虫的入门和了解
+> ### 一些简单的爬虫案例,有助于对爬虫的入门和了解
 
 # **编译环境**
  System | win10 1803 
 ---|---
  Python Version | [python3.6.2](https://www.python.org/downloads/release/python-362/) |
  Python IDE | [VS Code](https://code.visualstudio.com/) |
-
+ Code size | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hfg123/Spider_crawler.svg?style=flat-square)
 
 
 # [Sougou_spider(搜狗壁纸抓取)](https://github.com/hfg123/Spider_crawler/tree/master/Sougou_spider)
 
 ## **安装所需库**
+
+### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=requests)
 ```
 pip install requests
-pip install Fake_Useragent
 pip install urllib
 
 ```
@@ -51,6 +52,8 @@ pip install urllib
 # [Html_parse(网页抓取)](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
 
 ## **安装所需库**
+
+### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=lxml)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/beautifulsoup4.svg?label=beautifulsoup4)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyquery.svg?label=pyquery)
 ```
 
 pip install lxml
@@ -71,7 +74,12 @@ pip install pyquery
 
 # [Douban_crawler(豆瓣)](https://github.com/hfg123/Spider_crawler/tree/master/Douban)
 
+## **安装所需库**
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pandas.svg?label=pandas)
 
+```
+pip install pandas
+```
 
 ### [chick here to read README-DOUBAN](https://github.com/hfg123/Spider_crawler/blob/master/Douban/README_Douban.md)
 
