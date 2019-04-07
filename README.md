@@ -29,7 +29,7 @@ pip install urllib
 ```
 ----
 
-### [chick here to read README-Picture](https://github.com/SunRelease/Spider_crawler/blob/master/Picture_spider/README-Picture.md)
+###  [chick here to read README-Picture](https://github.com/SunRelease/Spider_crawler/blob/master/Picture_spider/README-Picture.md)
 
       
 >* 1.这是一个支持壁纸抓取的软件,运行后将在本文件路径创建文件夹以及图片
@@ -55,7 +55,7 @@ pip install pyquery
 ```
 ----
 
-### [小鸡在这里阅读README-Html_parse] （https://github.com/hfg123/Spider_crawler/blob/master/Html_parse/README-Html_parse.md)
+### [chick here to read README-Html_parse](https://github.com/hfg123/Spider_crawler/blob/master/Html_parse/README-Html_parse.md)
 
 >* 1 这是运用基本原生的框架进行初步网页提取,**方法包括但不仅限于下面的方法**
 
