@@ -122,6 +122,26 @@ class Image():
 
     pass
 
+    def total_size(self, path):
+        '''
+        递归计算文件夹大小
+        增加文件计算代码优化
+        :param path:
+        :return:
+        '''
+        size_sum = 0
+        file_list = os.listdir(path)
+        for name_list in file_list:
+
+            abs_path = os.path.join(path, name_list)
+            if os.path.isdir(abs_path):
+
+                size = self.total_size(abs_path)
+                size_sum += size
+            else:
+                size_sum += os.path.getsize(abs_path)
+        return size_sum
+
     def run(self):
         '''
         启动函数,并开始抓取
@@ -136,7 +156,12 @@ class Image():
             self.save(items)
 
             time.sleep(1)
-            print("抓取第%s页成功" % page)
+
+            sizes = float(self.total_size('images'))
+
+            real_size = sizes / 1024 / 1024
+
+            print("抓取第%s页成功,目前文件夹总大小 %.2f MB" % (page, real_size))
         pass
 
 
@@ -159,6 +184,6 @@ if __name__ == '__main__':
 
     pool.map(spider.run(), groups)
 
-    pool.close()
-
     pool.join()
+
+    pool.close()
