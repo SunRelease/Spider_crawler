@@ -1,131 +1,191 @@
 # -*- coding: utf-8 -*-
 # author :HXM
 
-import re,os,requests,json
-from fake_useragent import UserAgent
+
+import os
+import sys
 import time
-from hashlib import md5
-from multiprocessing.pool import Pool
+import random
+import requests
+from multiprocessing import Pool
 
-def image_parser(html):
-    
-    if html.get('items'):
 
-        data=html.get('items')
+class Image():
 
-        for item in data:         #字典的遍历
+    def __init__(self, query, start_page):
+        '''
+        初始化变量
+        :param query:
+        '''
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+            'cookie': 'ABTEST=0|1554980405|v1; IPLOC=CN4401; SUV=006F02A478ECB1325CAF1E35AF346387; JSESSIONID=aaajNLx9bNXqrhK8FdmOw; tip_show_home_search=20190411; SNUID=6EEAB0235C5EDD644D819B135C19A8A3; ld=Bkllllllll2trecclllllVhs40klllllWnheGkllll9llllljZlll5@@@@@@@@@@; tip_show=20190411'
+        }
 
-            image_url=item.get('ori_pic_url')#json值的获取
+        self.url = 'https://pic.sogou.com/pics'
 
-            r1=r'[\\/:*?"<>|.]'#去除非法文件命名
-            image_titles=re.sub(r1,'-',item.get('title'))
-            
-            yield {
-                'image_title' :image_titles,
+        self.query = query
+        self.start_page = start_page
 
-                'image_url' :image_url
-                }#运用generator生成字典
-      
-                   
-def save_image(item):
+    def get_page(self, page):
+        '''
+        1.默认创建images文件夹
+        2.传入参数,将数据格式化
+        :param page:
+        :return:
+        '''
 
-    img_path = 'imgs' + os.path.sep + item.get('image_title')
-    #于上面的函数不一样，只能调用yeild生成器的值，不要用作item.get（‘orinigl_url')
+        if not os.path.exists('images'):
+            os.makedirs('images')
 
-    print("文件路径获取成功!!")
-    
-    if  img_path[0:50]:#字符串的截取，解决文件名过长的导致无法建立文件夹
-       
-        if not os.path.exists(img_path): #谨记加not，否则找不到文件
+        params = {
+            'query': self.query,
+            'mode': 1,
+            'start': page,
+            'reqType': 'ajax',
+            'reqFrom': 'result',
+            'tn': 0
+        }
 
-            os.makedirs(img_path)
+        session = requests.Session()
+        response = session.get(url=self.url, params=params, headers=self.headers)
 
         try:
-            
-            resp =requests.get(item.get('image_url'))   
+            if response.status_code == 200:
+                # print(response.content.decode('utf-8'))
+                return response.json()
+            else:
+                return None
+        #     排除异常
+        except Exception as e:
 
-            if resp.status_code==200:
+            print("error is %s" % e)
 
-                file_path= img_path + os.path.sep + '{file_name}.{file_suffix}'.format(
-                    file_name=md5(resp.content).hexdigest(),#运用哈希值生成文件名,防止重复
-                    file_suffix='jpg')        
+    pass
 
-                if not os.path.exists(file_path):   #谨记加not，建立新文件
+    def page_parse(self, htmls):
+        '''
+        1.数据解析提取
+        2.清洗返回字典
+        :param htmls:
+        :return:
+        '''
+        jsons = htmls.get('items')
 
-                    print('建立文件夹成功!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-                    
-                    print("path is %s" % file_path)
+        for json in jsons:
+            url = json.get('ori_pic_url')
 
-                    with open (file_path,'wb')as f:
+            yield {
+                'url': url
+            }
 
-                        f.write(resp.content)#写入文件
-                    
-                    print('Downloaded image path is %s' % file_path)
-                    
-                    print('图片保存成功`!!')
-                    
-                    print("--------------------------------------------------------")
+    pass
+
+    def save(self, items):
+        '''
+        1.字典的遍历
+        2.保存图片在images文件中
+        :param items:
+        :return:
+        '''
+        try:
+            for item in items:
+                responses = requests.get(url=(item.get('url')), headers=self.headers)
+                if responses.status_code == 200:
+                    # 随机命名图片
+                    name = random.randint(1000, 99999)
+                    # 设置开始时间
+                    start_time = time.time()
+                    # 保存图片
+                    with open('images/{}.jpg'.format(name), 'wb')as f:
+
+                        f.write(responses.content)
+                        # 模拟进度条
+                        for i in range(100):
+                            k = i + 1
+
+                            str = '>' * (i // 2) + '' * ((100 - k) // 2)
+
+                            sys.stdout.write('\r' + str + '[%s%%]' % (i + 1))
+
+                            sys.stdout.flush()
+
+                            time.sleep(0.01)
+                    #         结束时间
+                    end_time = time.time()
+
+                    print("Download %s.jpg success! It cost %.2f s" % (name, (end_time - start_time)))
                 else:
+                    print("Download fail!")
 
-                    print("Download fail",file_path)
+        except Exception as e:
 
-        except requests.ConnectionError:
-#输出错误原因
-            print("ConnectionError")
+            print("Download %s" % e)
 
-            return None
-    
-def image_get(url):
+    pass
 
-    try:
+    def total_size(self, path):
+        '''
+        递归计算文件夹大小
+        增加文件计算代码优化
+        :param path:
+        :return:
+        '''
+        size_sum = 0
+        file_list = os.listdir(path)
+        for name_list in file_list:
 
-        headers={'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
-        'Host': 'pic.sogou.com'}
-        
-        response=requests.get(url,headers=headers)
+            abs_path = os.path.join(path, name_list)
+            if os.path.isdir(abs_path):
 
-        if response.status_code==200:
+                size = self.total_size(abs_path)
+                size_sum += size
+            else:
+                size_sum += os.path.getsize(abs_path)
+        return size_sum
 
-            return response.json()
-    
-    except requests.ConnectionError as e:
+    def run(self):
+        '''
+        启动函数,并开始抓取
+        :return:
+        '''
+        pages = int(self.start_page)*48
+        for page in range(48, pages, 48):
+            htmls = self.get_page(page=page)
 
-        print("Download fail:{}".format(e.args))
-        
-        return None
+            items = self.page_parse(htmls=htmls)
 
-def main():
+            self.save(items)
 
-    word=str(input("请输入抓取关键字:"))
+            time.sleep(1)
 
-    page=int(input("请输入抓取的页数:"))
-# 优化交互界面
-    words=urllib.parse.quote(word,encoding='gbk')
+            sizes = float(self.total_size('images'))
 
-    url=r'https://pic.sogou.com/pics?query='+words+r'&mode=1&start='+str(page*48)+r'&reqType=ajax&reqFrom=result&tn=0'
-#     重新定义并规划了API接口
-    html=image_get(url)
+            real_size = sizes / 1024 / 1024
 
-    for item in image_parser(html):
+            print("抓取第%s页成功,目前文件夹总大小 %.2f MB" % (page/48, real_size))
+        pass
 
-        print(item)
-
-        save_image(item)
 
 GROUP_START = 0
 GROUP_END = 8
-#线程池的建立
-# 减少线程池的数目,降低机器负载,防止宕机
+
 if __name__ == '__main__':
+    '''
+    交互界面
+    开启多线程池
+    '''
+    query = input("请输入关键字:")
+    page = input("请输入抓取的页数:")
+
     pool = Pool()
-    
+
     groups = ([x * 15 for x in range(GROUP_START, GROUP_END + 1)])
-#     优化线程池
-    pool.map(main(), groups)
-    
-    pool.close()
-    
+
+    spider = Image(query=query, start_page=page)
+
+    pool.map(spider.run(), groups)
+
     pool.join()
-    
-    time.sleep(3)
-#默认休息3秒,防止抓取过快导致ip被封
+
+    pool.close()
