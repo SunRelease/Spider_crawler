@@ -1,11 +1,6 @@
-# **简介**
-
- ![A38by4.jpg](https://s2.ax1x.com/2019/03/21/A38by4.jpg)
-
-
-
-
-
+# **Spider_crawler(简介)**
+![A38by4.jpg](https://s2.ax1x.com/2019/03/21/A38by4.jpg)
+ 
 ----
 > ### 一些简单的爬虫案例,有助于对爬虫的入门和了解
 ----
@@ -13,7 +8,7 @@
  System | win10 1803 
 ---|---
  Python Version | [python3.6.2](https://www.python.org/downloads/release/python-362/) |
- Python IDE | [VS Code](https://code.visualstudio.com/) |
+ Python IDE | [VS Code](https://code.visualstudio.com/)  / [Pycharm](https://www.jetbrains.com/pycharm/download/)
  Code size | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hfg123/Spider_crawler.svg?style=flat-square)
 
 ----
@@ -83,6 +78,30 @@ pip install pandas
 
 
 ----
+
+# [Translate(翻译)](https://github.com/SunRelease/Spider_crawler/tree/master/Translate)
+
+## **安装所需库**
+![PyPI](https://img.shields.io/pypi/v/js2py.svg?label=js2py)
+
+```
+pip install js2py
+```
+----
+
+### [chick here to read README](https://github.com/SunRelease/Spider_crawler/blob/master/Translate/README-Translate.md)
+
+>* 1.关于爬取翻译API以及获取翻译结果
+
+>* 2.可以支持目前大多数语种的翻译
+
+>* 3.更多功能详见 README
+
+----
+
+
+
+
 
 
 
