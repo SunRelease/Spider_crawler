@@ -1,26 +1,33 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# author :HXM
 
 
-import requests
 import time
+import requests
+from faker import Faker
+from random import randint
 
 
 class Douban():
     # 初始化变量
-    def __init__(self, tag):
+    def __init__(self, tag, page):
         # 定义标签
         self.tag = tag
+        # 定义页数
+        self.page = page
         # Ajax接口API
         self.url = 'https://movie.douban.com/j/search_subjects'
-        # 请求头headers
+#         添加随机请求头
+        faker = Faker()
+        # 请求头headers随机化
         self.headers = {
-            'User_Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+            'User_Agent': faker.user_agent(),
             'Host': 'movie.douban.com',
             'Referer': 'https://movie.douban.com'}
         pass
 
-    def get_source(self, page_start):
+    def get_source(self, page_strat):
         # 获取相应网页源码
         # 构造参数
         params = {
@@ -28,15 +35,14 @@ class Douban():
             "tag": self.tag,
             "sort": "recommend",
             "page_limit": "20",
-            "page_start": page_start
+            "page_start": page_strat
         }
-        # 为了方便,保持会话
-        session = requests.Session()
-        response = session.get(url=self.url, params=params, headers=self.headers)
+        # 随机延时
+        response = requests.get(url=self.url, params=params, headers=self.headers)
+        sleep_time = randint(1, 3)
+        time.sleep(sleep_time)
         if response.status_code == 200:
             # 返回有效请求 response==200
-            # 将结果打印在控制台上
-            print(response.content.decode('utf-8'))
             # Ajax json格式化
             return response.json()
         else:
@@ -61,6 +67,8 @@ class Douban():
              ID
              url
             '''
+            # 将结果打印在控制台上
+            print("{} {} {}".format(title,rate,url))
             yield {
                 'title': title,
                 'rate': rate,
@@ -74,7 +82,7 @@ class Douban():
         try:
             for item in items:
                 # 保存为csv文件,逗号分隔值
-                with open('donban.csv', 'a', encoding='utf-8')as f:
+                with open('donban.csv', 'a', encoding='utf-8-sig')as f:
                     f.write(
                         "{},{},{},{}\n".format(item.get('id'), item.get('title'), item.get('rate'), item.get('url')))
         except Exception as e:
@@ -85,15 +93,15 @@ class Douban():
 
     def run(self):
         # 定义程序运行
-        for page_start in range(0, 100, 20):
+        pages = int(self.page)* 20
+        for page_start in range(0, pages, 20):
             '''
-            这里是默认从0到100,步长为20抓取
-            大家可以根据需求进行修改抓取
+            大家可以根据需求进行修改抓取s
             思路:
             用input函数进行交互
             '''
             # 获取网页
-            response = self.get_source(page_start=page_start)
+            response = self.get_source(page_strat=page_start)
             # 解析网页
             items = self.parser(response)
             # 保存结果
@@ -104,8 +112,8 @@ class Douban():
 
 
 if __name__ == '__main__':
-    douban_spider = Douban("热门")
+    page = input("请输入抓取页数:")
+    tag = input("请输入抓取标签:")
+    douban_spider = Douban(tag=tag, page=page)
     douban_spider.run()
-
-
 
