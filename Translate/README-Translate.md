@@ -11,9 +11,9 @@
 
  请求名 |  请求参数
 ---- | ----
- query| 翻译的内容
-from | 现在的类型
-to |转换后的类型
+ query| 翻译的内容 (你好)
+from | 现在的类型 (zh)
+to |转换后的类型 (en)
 token | (6fd9079d741adce0cc8cc1336220dc0b) 经过对比参数可以固定
 sign | sign
 
