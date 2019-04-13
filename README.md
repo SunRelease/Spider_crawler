@@ -62,10 +62,10 @@ pip install pyquery
 # [Douban_crawler(豆瓣)](https://github.com/hfg123/Spider_crawler/tree/master/Douban)
 
 ## **安装所需库**
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pandas.svg?label=pandas)
-
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pandas.svg?label=pandas) ![PyPI](https://img.shields.io/pypi/v/Faker.svg?label=Faker)
 ```
 pip install pandas
+pip install Faker
 ```
 ----
 ### [chick here to read README-DOUBAN](https://github.com/hfg123/Spider_crawler/blob/master/Douban/README_Douban.md)
