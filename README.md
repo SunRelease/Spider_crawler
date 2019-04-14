@@ -99,6 +99,17 @@ pip install js2py
 
 ----
 
+# [Selenium_login(模拟登陆)](https://www.seleniumhq.org/)
+
+## **安装所需库**
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/selenium.svg?label=selenium)
+
+```
+pip install selenium
+```
+
+- [x] [fifedu口语模拟登陆](https://github.com/SunRelease/Spider_crawler/tree/master/Fifedu_spider)
+> * 模拟fifedu口语登陆,方便抓取音频以及其他信息
 
 
 
