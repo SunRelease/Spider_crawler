@@ -12,6 +12,15 @@
 
 [![AX9ao8.gif](https://s2.ax1x.com/2019/04/14/AX9ao8.gif)](https://imgchr.com/i/AX9ao8)
 
+----
+
+* ## **图片抓取**
+
+![AXVM28.gif](https://s2.ax1x.com/2019/04/14/AXVM28.gif)
+
+---
+![AXVcI1.gif](https://s2.ax1x.com/2019/04/14/AXVcI1.gif)
+
 ---
 
 * ## **翻译助手**
