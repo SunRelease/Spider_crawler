@@ -12,6 +12,13 @@
  Code size | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hfg123/Spider_crawler.svg?style=flat-square)
 
 ----
+
+# Test
+
+* ## [chick here to read test](https://github.com/SunRelease/Spider_crawler/blob/master/README-Test.md)
+
+---
+
 # [Picture_spider(图片抓取)](https://github.com/SunRelease/Spider_crawler/tree/master/Picture_spider)
 
 ## **安装所需库**
