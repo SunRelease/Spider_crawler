@@ -25,9 +25,9 @@ sign | sign
 
 >* ### 有了sign值,构造传参,解析就可以获取结果了
 
-# [成品](https://github.com/SunRelease/Spider_crawler/blob/master/Translate/translate.py)
+# 成品
 
-## 1.0版本
+## 1.0版本(4-12) [python 源码版](https://github.com/SunRelease/Spider_crawler/blob/master/Translate/translate.py)
 
 ### 实现功能:
 
@@ -39,3 +39,28 @@ sign | sign
 * ### 3.**输入转换参数是语种简写,不是汉字**
 
 * ### 4.主要考虑对其实现GUI界面编写,开发中>>>>
+----
+## 2.0版(4-13)  [shell 版下载](https://www.lanzous.com/i3t37gd)
+
+### 实现功能:
+
+* ### 1.脱离python环境,打包为可执行shell可执行文件,解压即可使用
+
+* ### 2.translate_base.js为必须文件,否则无法获取翻译API
+
+----
+## 3.0版(4-15)  [GUI 版下载](https://www.lanzous.com/i3t3ach)
+
+### 实现功能:
+
+* ### 1.优化界面,使用基于pyqt5的GUI图形界面.
+
+* ### 2.优化了代码,精简逻辑.
+
+* ### 3.并将GUI版打包为安装包,会在所选目录下生成Translate文件夹,并默认再桌面生成快捷方式
+
+----
+
+
+
+
