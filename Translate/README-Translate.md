@@ -1,9 +1,9 @@
 # TRANSLATE_SPIDER
 
-* ### 根据Github上的大神思路,仿写了一个翻译爬虫小程序,提高自己的实践能力
+* ### 根据GitHub上的大神提供思路,仿写了一个翻译爬虫小程序,并对其进行GUI界面编写
 ----
 
-# [思路](https://fanyi.baidu.com/)
+# [思路](https://www.jianshu.com/p/38a65d8d3e80)
 
 >* ### 对网站进行抓包,可以通过模拟手机版来进行提取有用参数
 
