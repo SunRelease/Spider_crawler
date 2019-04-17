@@ -25,7 +25,11 @@
 
 * ## **翻译助手**
 
-![AXFn6H.gif](https://s2.ax1x.com/2019/04/14/AXFn6H.gif)
+* ## SHELL版
+![AzSD9U.gif](https://s2.ax1x.com/2019/04/17/AzSD9U.gif)
+
+* ## GUI版
+![AzSu7t.gif](https://s2.ax1x.com/2019/04/17/AzSu7t.gif)
 
 ----
 
