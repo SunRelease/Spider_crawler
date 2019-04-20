@@ -2,7 +2,7 @@
 
 ![ECUzh4.png](https://s2.ax1x.com/2019/04/20/ECUzh4.png)
 ----
-# **编译环境**
+# **Compiling Environment**
  System | win10 1803 
 ---|---
  Python Version | [python3.6.2](https://www.python.org/downloads/release/python-362/) |
@@ -19,7 +19,7 @@
 
 # [Picture_spider(图片抓取)](https://github.com/SunRelease/Spider_crawler/tree/master/Picture_spider)
 
-## **安装所需库**
+## **Installation of required libraries**
 
 ### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=requests)
 ```
@@ -43,7 +43,7 @@ pip install urllib
 
 # [Html_parse(网页抓取)](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
 
-## **安装所需库**
+## **Installation of required libraries**
 
 ### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=lxml)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/beautifulsoup4.svg?label=beautifulsoup4)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyquery.svg?label=pyquery)
 ```
@@ -66,7 +66,7 @@ pip install pyquery
 ----
 # [Douban_crawler(豆瓣)](https://github.com/hfg123/Spider_crawler/tree/master/Douban)
 
-## **安装所需库**
+## **Installation of required libraries**
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pandas.svg?label=pandas) ![PyPI](https://img.shields.io/pypi/v/Faker.svg?label=Faker)
 ```
 pip install pandas
@@ -86,7 +86,7 @@ pip install Faker
 
 # [Translate(翻译)](https://github.com/SunRelease/Spider_crawler/tree/master/Translate)
 
-## **安装所需库**
+## **Installation of required libraries**
 ![PyPI](https://img.shields.io/pypi/v/js2py.svg?label=js2py)
 
 ```
@@ -106,7 +106,7 @@ pip install js2py
 
 # [Selenium_login(模拟登陆)](https://www.seleniumhq.org/)
 
-## **安装所需库**
+## **Installation of required libraries**
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/selenium.svg?label=selenium)
 
 ```
