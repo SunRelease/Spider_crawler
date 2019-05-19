@@ -32,7 +32,9 @@
 ![AzSu7t.gif](https://s2.ax1x.com/2019/04/17/AzSu7t.gif)
 
 ----
+* ## **电脑图片收集**
 
+[![EjbIQe.md.gif](https://s2.ax1x.com/2019/05/19/EjbIQe.md.gif)](https://imgchr.com/i/EjbIQe)
 
 
 
