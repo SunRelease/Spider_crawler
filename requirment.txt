@@ -1,0 +1,7 @@
+Js2Py==0.60
+beautifulsoup4==4.6.3
+requests==2.21.0
+pyquery==1.4.0
+selenium==2.48.0
+Faker==1.0.5
+pandas==0.24.2
