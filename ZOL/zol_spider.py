@@ -66,6 +66,10 @@ class Zol():
         :param html:
         :return:
         '''
+        if not exists("zol_detail"):
+            makedirs("zol_detail")
+        #     csv文件位置
+        save_csv_path = "zol_detail/zol_{}.csv".format(self.price)
         pattern = compile(
             'height=.*?.src="(.*?)" alt=.*?<h3><a href.*? title="(.*?)".*?class="price-tip">(.*?)</span>.*?class="price-type">(.*?)</b>.*?class="score">(.*?)</span>',
             S)
@@ -74,7 +78,7 @@ class Zol():
         for result in results:
             print('详情:{},评分:{} 参考价:{}'.format(result[1], result[4], result[2], result[3]))
             # 生成文件csv格式,可以自动匹配价格
-            with open('zol_{}.csv'.format(self.price), 'a', encoding='utf-8-sig')as f:
+            with open(save_csv_path, 'a', encoding='utf-8-sig')as f:
                 f.write('{},{},{}\n'.format(result[4], result[1], result[3]))
             dir_name = result[1][0:15]
             yield {
