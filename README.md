@@ -17,16 +17,15 @@
 
 ---
 
+# [**Install Python Package**](https://github.com/SunRelease/Spider_crawler/edit/master/requirments.txt)
+```
+windows or linux :pip install -r .\requirment.txt
+```
 # [Picture_spider(图片抓取)](https://github.com/SunRelease/Spider_crawler/tree/master/Picture_spider)
 
-## **Installation of required libraries**
 
 ### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=requests)
-```
-pip install requests
-pip install urllib
 
-```
 ----
 
 ###  [chick here to read README-Picture](https://github.com/SunRelease/Spider_crawler/blob/master/Picture_spider/README-Picture.md)
@@ -43,16 +42,8 @@ pip install urllib
 
 # [Html_parse(网页抓取)](https://github.com/hfg123/Spider_crawler/tree/master/Html_parse)
 
-## **Installation of required libraries**
-
 ### ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lxml.svg?label=lxml)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/beautifulsoup4.svg?label=beautifulsoup4)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyquery.svg?label=pyquery)
-```
 
-pip install lxml
-pip install beautifulsoup4
-pip install pyquery
-
-```
 ----
 
 ### [chick here to read README-Html_parse](https://github.com/hfg123/Spider_crawler/blob/master/Html_parse/README-Html_parse.md)
@@ -66,12 +57,8 @@ pip install pyquery
 ----
 # [Douban_crawler(豆瓣)](https://github.com/hfg123/Spider_crawler/tree/master/Douban)
 
-## **Installation of required libraries**
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pandas.svg?label=pandas) ![PyPI](https://img.shields.io/pypi/v/Faker.svg?label=Faker)
-```
-pip install pandas
-pip install Faker
-```
+
 ----
 ### [chick here to read README-DOUBAN](https://github.com/hfg123/Spider_crawler/blob/master/Douban/README_Douban.md)
 
@@ -86,12 +73,8 @@ pip install Faker
 
 # [Translate(翻译)](https://github.com/SunRelease/Spider_crawler/tree/master/Translate)
 
-## **Installation of required libraries**
 ![PyPI](https://img.shields.io/pypi/v/js2py.svg?label=js2py)
 
-```
-pip install js2py
-```
 ----
 
 ### [chick here to read README](https://github.com/SunRelease/Spider_crawler/blob/master/Translate/README-Translate.md)
@@ -106,17 +89,22 @@ pip install js2py
 
 # [Selenium_login(模拟登陆)](https://www.seleniumhq.org/)
 
-## **Installation of required libraries**
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/selenium.svg?label=selenium)
-
-```
-pip install selenium
-```
 
 - [x] [fifedu口语模拟登陆](https://github.com/SunRelease/Spider_crawler/tree/master/Fifedu_spider)
 > * 模拟fifedu口语登陆,方便抓取音频以及其他信息
 
+---
 
+# [Zol_spider](https://github.com/SunRelease/Spider_crawler/tree/master/ZOL)
+
+![PyPI](https://img.shields.io/pypi/v/tqdm.svg?label=tqdm)
+---
+### [chick here to read README](https://github.com/SunRelease/Spider_crawler/blob/master/ZOL/README_ZOL.md)
+
+>* 1.对电脑信息进行收集处理
+
+>* 2.详情见README
 
 
 
