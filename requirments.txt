@@ -5,3 +5,5 @@ pyquery==1.4.0
 selenium==2.48.0
 Faker==1.0.5
 pandas==0.24.2
+lxml==4.2.5
+tqdm==4.31.1
