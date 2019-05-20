@@ -4,19 +4,19 @@
 
 * ## **豆瓣抓取测试**
 
-[![AXpwvR.gif](https://s2.ax1x.com/2019/04/14/AXpwvR.gif)](https://imgchr.com/i/AXpwvR)
+![ExbYdA.gif](https://s2.ax1x.com/2019/05/20/ExbYdA.gif)
 
 ---
 
 * ## **网页代理IP抓取**
 
-[![AX9ao8.gif](https://s2.ax1x.com/2019/04/14/AX9ao8.gif)](https://imgchr.com/i/AX9ao8)
+![Exb6ds.gif](https://s2.ax1x.com/2019/05/20/Exb6ds.gif)
 
 ----
 
 * ## **图片抓取**
 
-![AXVM28.gif](https://s2.ax1x.com/2019/04/14/AXVM28.gif)
+![ExLdKS.gif](https://s2.ax1x.com/2019/05/20/ExLdKS.gif)
 
 ---
 ![AXVcI1.gif](https://s2.ax1x.com/2019/04/14/AXVcI1.gif)
@@ -34,7 +34,10 @@
 ----
 * ## **电脑图片收集**
 
-[![EjbIQe.md.gif](https://s2.ax1x.com/2019/05/19/EjbIQe.md.gif)](https://imgchr.com/i/EjbIQe)
+![Exj0bD.gif](https://s2.ax1x.com/2019/05/20/Exj0bD.gif)
+---
+
+![EjbIQe.gif](https://s2.ax1x.com/2019/05/19/EjbIQe.gif)
 
 
 
