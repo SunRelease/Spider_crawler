@@ -34,8 +34,6 @@
 ----
 * ## **电脑图片收集**
 
-![Exj0bD.gif](https://s2.ax1x.com/2019/05/20/Exj0bD.gif)
----
 
 ![EjbIQe.gif](https://s2.ax1x.com/2019/05/19/EjbIQe.gif)
 
