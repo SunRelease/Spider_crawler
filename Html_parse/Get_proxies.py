@@ -20,8 +20,9 @@ def page_get():
                 datas=response.text
                 
                 return datas
-                #返回HTMl
-         return None
+        else:
+                # 返回HTMl
+                return None
 def parse():
 
         pattern=re.compile('.*?<br />(.*?)#.*?<br />',re.S)
