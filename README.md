@@ -37,6 +37,7 @@ windows or linux :pip install -r .\requirment.txt
 
 
 <h2 id="Picture_spider">Picture_spider</h2>
+
 > ## [Picture_spider(图片抓取)](https://github.com/SunRelease/Spider_crawler/tree/master/Picture_spider)
 
 
