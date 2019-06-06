@@ -37,5 +37,13 @@
 
 ![EjbIQe.gif](https://s2.ax1x.com/2019/05/19/EjbIQe.gif)
 
+----
 
+* ## **快递查询**
 
+* SHELL版
+![VaBklt.gif](https://s2.ax1x.com/2019/06/06/VaBklt.gif)
+
+* GUI版
+
+![VaBCYd.gif](https://s2.ax1x.com/2019/06/06/VaBCYd.gif)
