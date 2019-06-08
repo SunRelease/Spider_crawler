@@ -16,7 +16,7 @@
 
 <h3 id="Express"> 成品 </h3>
 
-- [x] [Express(通用GUI版)](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express.py)
+- [x] [Express -通用GUI版](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express.py)
 
 > * 直接请求爬取快递API参数
 
@@ -26,11 +26,15 @@
 
 > * 使用原生`tkinter`库进行GUI界面编写,缩小文件体积
 
-> * 待完善中...   [GUI下载](https://www.lanzous.com/i4htgta)
+> * 增进逻辑性,优化代码,捕获异常(update 6-9)
+
+> * 待完善中...   
+
+> * [GUI-下载](https://www.lanzous.com/i4htgta)
 
 ---
 
-- [x] [Express100(官网版)](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express100.py)
+- [x] [Express100 -官网版 ](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express100.py)
 
 > * 对快递100进行官网查询
 
