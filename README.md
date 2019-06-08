@@ -1,4 +1,4 @@
-# Spider_crawler
+# Spider-crawler
 
 ![ECUzh4.png](https://s2.ax1x.com/2019/04/20/ECUzh4.png)
 ----
@@ -21,19 +21,19 @@
 windows or linux :pip install -r .\requirment.txt
 ```
 
-# Spider_Catalog
+# Spider-Catalog
 
-- [x] [picture_spider](#Picture_spider)
+- [picture_spider](#Picture_spider)
 
-- [x] [IP_crawler](#IP_crawler)
+- [IP_crawler](#IP_crawler)
 
-- [x] [Douban_crawler](#Douban_crawler)
+- [Douban_crawler](#Douban_crawler)
 
-- [x] [Translate](#Translate)
+- [Translate](#Translate)
 
-- [x] [Zol_spider](#Zol_spider)
+- [Zol_spider](#Zol_spider)
 
-- [x] [Express](#Express)
+- [Express](#Express)
 
 
 <h2 id="Picture_spider">Picture_spider</h2>
