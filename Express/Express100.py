@@ -19,9 +19,9 @@ class Express100():
             'User-Agent': self.useragent_choice(),
         }
         self.postid = postid
-        self.id_url = 'https://www.kuaidi100.com/query?'                        #快递查询API
-        self.type_url = 'https://m.kuaidi100.com/apicenter/kdquerytools.do?'    #类型API
-        self.id_params = {                                                      #查询data
+        self.id_url = 'https://www.kuaidi100.com/query?'  # 快递查询API
+        self.type_url = 'https://m.kuaidi100.com/apicenter/kdquerytools.do?'  # 类型API
+        self.id_params = {  # 查询data
             'type': self.type_return(),
             'postid': postid,
             'id': 1,
@@ -82,7 +82,7 @@ class Express100():
 
         datas = jsons.get('auto')
 
-        return datas[0].get('comCode')          #碰到多个信息匹配时.默认首个类型
+        return datas[0].get('comCode')  # 碰到多个信息匹配时.默认首个类型
 
     pass
 
@@ -144,6 +144,6 @@ if __name__ == '__main__':
     '''
     1.函数入口点
     '''
-    postid = int(input("请输入订单号:"))          #测试:4600284951052
+    postid = int(input("请输入订单号:"))  # 测试:4600284951052
     express = Express100(postid=postid)
     express.run()

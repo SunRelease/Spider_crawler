@@ -30,9 +30,18 @@ class Express():
         1.获取response,并json格式化
         :return:
         '''
-        response = get(url=self.url, headers=self.headers, params=self.params)
-        sleep(1)
-        return response.json()
+        try:
+            response = get(url=self.url, headers=self.headers, params=self.params)
+            sleep(1)
+            if response.status_code == 200:
+                return response.json()
+            else:
+                return None
+            pass
+
+        except Exception as e:
+            print(f"error is {e}")
+            pass
 
     pass
 
@@ -43,12 +52,19 @@ class Express():
         :param response:
         :return:
         '''
-        datas = response.get('data').get('info').get('context')     #获取datas信息
-        for data in datas:                                          #循环提取信息
-            times = int(data.get('time'))
-            timelocal = localtime(times)
-            realtime = strftime("%Y-%m-%d %H:%M:%S", timelocal)     #时间戳转换为标准时间
-            print('{} {}\n'.format(realtime, data.get('desc')))     #打印信息
+        try:
+            datas = response.get('data').get('info').get('context')  # 获取datas信息
+            for data in datas:  # 循环提取信息
+                times = int(data.get('time'))
+                timelocal = localtime(times)
+                realtime = strftime("%Y-%m-%d %H:%M:%S", timelocal)  # 时间戳转换为标准时间
+                print('{} {}\n'.format(realtime, data.get('desc')))  # 打印信息
+            pass
+
+        except Exception as e:
+            print(f"error is {e}")
+            pass
+
     pass
 
     def run(self):
@@ -56,8 +72,12 @@ class Express():
         1.函数起点
         :return:
         '''
-        response = self.get_response()
-        self.parse(response=response)
+        try:
+            response = self.get_response()
+            self.parse(response=response)
+
+        except Exception as e:
+            print(f"error is {e}")
 
     pass
 
@@ -66,7 +86,7 @@ if __name__ == '__main__':
     '''
     启动函数
     '''
-    postid = int(input("请输入订单号:"))              #测试:4600284951052
+
+    postid = int(input("请输入订单号:"))  # 测试单号:4600284951052
     express = Express(postid=postid)
     express.run()
-
