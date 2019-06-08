@@ -26,7 +26,7 @@
 
 > * 使用原生`tkinter`库进行GUI界面编写,缩小文件体积
 
-> * 待完善中...   [GUI下载]()
+> * 待完善中...   [GUI下载](https://www.lanzous.com/i4htgta)
 
 ---
 
