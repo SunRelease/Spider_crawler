@@ -2,7 +2,7 @@
 
 * ### 根据GitHub上的大神提供思路,复原翻译爬虫原理
 
-* ### 如果需要实现翻译小程序,请在百度上申请相应的`API`,支持正版,下面仅仅提供参考,`GUI`界面是正版的`API`申请翻译的
+* ### 如果需要实现翻译小程序,请在百度上申请相应的`API`,支持正版,下面仅仅提供参考,`GUI`界面是使用正版`API`>> [申请地址](http://api.fanyi.baidu.com/api/trans/product/index)
 ----
 
 # [思路](https://www.jianshu.com/p/38a65d8d3e80)
