@@ -28,7 +28,9 @@
 
 > * 增进逻辑性,优化代码,捕获异常(update 6-9)
 
-> * 待完善中...   
+> * 待完善中...
+
+> * 添加GUI界面,优化代码 (update 6-19)
 
 > * [GUI-下载](https://www.lanzous.com/i4htgta)
 
