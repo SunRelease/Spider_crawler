@@ -48,7 +48,9 @@ sign | sign
 
 * ### 1.脱离python环境,打包为可执行shell可执行文件,解压即可使用
 
-* ### 2.`translate_base.js`为必须文件,否则无法获取翻译API
+* ### 2.如是利用爬取`API`,则`translate_base.js`为必须文件,否则无法获取翻译API
+
+* ### 3.可选择官网的API
 
 ----
 ## 3.0版(4-15)  [GUI 版下载](https://www.lanzous.com/i3t3ach)
