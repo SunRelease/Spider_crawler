@@ -45,7 +45,7 @@ class Image():
             'page': page
         }
 
-        session = requests.Session()
+   
         response = session.get(url=self.url, params=params, headers=self.headers)
 
         try:
@@ -71,7 +71,7 @@ class Image():
         jsons = htmls.get('results')
 
         for json in jsons:
-            url = json.get('links').get('download')
+            url = json.get('urls').get('full')
 
             yield {
                 'url': url
