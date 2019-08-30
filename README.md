@@ -3,7 +3,7 @@
 ![ECUzh4.png](https://s2.ax1x.com/2019/04/20/ECUzh4.png)
 ----
 # **Compiling Environment**
- System | win10 1803 
+ System | win10 1803 / 1903
 ---|---
  Python Version | [python3.6.2](https://www.python.org/downloads/release/python-362/) |
  Python IDE | [VS Code](https://code.visualstudio.com/)  / [Pycharm](https://www.jetbrains.com/pycharm/download/)
