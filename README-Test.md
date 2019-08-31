@@ -31,6 +31,9 @@
 * ## GUI版
 ![AzSu7t.gif](https://s2.ax1x.com/2019/04/17/AzSu7t.gif)
 
+* ## GUI新版
+![mzuOJK.gif](https://s2.ax1x.com/2019/08/31/mzuOJK.gif)
+
 ----
 * ## **电脑图片收集**
 
@@ -48,4 +51,4 @@
 
 * ## GUI版
 
-![VaBCYd.gif](https://s2.ax1x.com/2019/06/06/VaBCYd.gif)
+![mzAqgA.gif](https://s2.ax1x.com/2019/08/31/mzAqgA.gif)
