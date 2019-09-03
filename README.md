@@ -1,9 +1,9 @@
-# Spider_crawler
+# Spider-crawler
 
 ![ECUzh4.png](https://s2.ax1x.com/2019/04/20/ECUzh4.png)
 ----
 # **Compiling Environment**
- System | win10 1803 
+ System | win10 1803 / 1903
 ---|---
  Python Version | [python3.6.2](https://www.python.org/downloads/release/python-362/) |
  Python IDE | [VS Code](https://code.visualstudio.com/)  / [Pycharm](https://www.jetbrains.com/pycharm/download/)
@@ -16,24 +16,24 @@
 * ## [chick here to test](https://github.com/SunRelease/Spider_crawler/blob/master/README-Test.md)
 
 
-# [**Install Python Package**](https://github.com/SunRelease/Spider_crawler/edit/master/requirments.txt)
+# [**Install Python Package**](https://github.com/SunRelease/Spider_crawler/blob/master/requirments.txt)
 ```
 windows or linux :pip install -r .\requirment.txt
 ```
 
-# Spider_Catalog
+# Spider-Catalog
 
-- [x] [picture_spider](#Picture_spider)
+- [picture_spider](#Picture_spider)
 
-- [x] [IP_crawler](#IP_crawler)
+- [IP_crawler](#IP_crawler)
 
-- [x] [Douban_crawler](#Douban_crawler)
+- [Douban_crawler](#Douban_crawler)
 
-- [x] [Translate](#Translate)
+- [Translate](#Translate)
 
-- [x] [Zol_spider](#Zol_spider)
+- [Zol_spider](#Zol_spider)
 
-- [x] [Express](#Express)
+- [Express](#Express)
 
 
 <h2 id="Picture_spider">Picture_spider</h2>

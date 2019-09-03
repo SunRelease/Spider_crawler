@@ -23,8 +23,7 @@ class Baidu_Translate(object):
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Mobile Safari/537.36",
             "Referer": "https://fanyi.baidu.com/",
-            "Cookie": "locale=zh; BAIDUID=1A1E2309C9CAD413D3D8DCD3A184E526:FG=1; Hm_lvt_64ecd82404c51e03dc91cb9e8c025574=1555066435; to_lang_often=%5B%7B%22value%22%3A%22en%22%2C%22text%22%3A%22%u82F1%u8BED%22%7D%2C%7B%22value%22%3A%22zh%22%2C%22text%22%3A%22%u4E2D%u6587%22%7D%5D; REALTIME_TRANS_SWITCH=1; FANYI_WORD_SWITCH=1; HISTORY_SWITCH=1; SOUND_SPD_SWITCH=1; SOUND_PREFER_SWITCH=1; Hm_lvt_afd111fa62852d1f37001d1f980b6800=1555066444; from_lang_often=%5B%7B%22value%22%3A%22zh%22%2C%22text%22%3A%22%u4E2D%u6587%22%7D%2C%7B%22value%22%3A%22en%22%2C%22text%22%3A%22%u82F1%u8BED%22%7D%5D; Hm_lpvt_afd111fa62852d1f37001d1f980b6800=1555074113; Hm_lpvt_64ecd82404c51e03dc91cb9e8c025574=1555074113"
-        }
+            "Cookie": "BAIDUID=39F1807835D5B6E08C4335B47B11D7BE:FG=1; ZD_ENTRY=bing; locale=zh; REALTIME_TRANS_SWITCH=1; FANYI_WORD_SWITCH=1; HISTORY_SWITCH=1; SOUND_SPD_SWITCH=1; SOUND_PREFER_SWITCH=1; to_lang_often=%5B%7B%22value%22%3A%22zh%22%2C%22text%22%3A%22%u4E2D%u6587%22%7D%2C%7B%22value%22%3A%22en%22%2C%22text%22%3A%22%u82F1%u8BED%22%7D%5D; from_lang_often=%5B%7B%22value%22%3A%22en%22%2C%22text%22%3A%22%u82F1%u8BED%22%7D%2C%7B%22value%22%3A%22de%22%2C%22text%22%3A%22%u5FB7%u8BED%22%7D%2C%7B%22value%22%3A%22zh%22%2C%22text%22%3A%22%u4E2D%u6587%22%7D%5D; Hm_lvt_64ecd82404c51e03dc91cb9e8c025574=1560347468,1560347474,1560347564,1560347574; Hm_lpvt_64ecd82404c51e03dc91cb9e8c025574=1560347574; Hm_lvt_afd111fa62852d1f37001d1f980b6800=1560342173,1560347474,1560347574; Hm_lpvt_afd111fa62852d1f37001d1f980b6800=1560347574; yjs_js_security_passport=29fd221280a8cf0c49ecffa8043272bab5f24526_1560347574_js"   }
 
     def creat_sign(self):
         '''
@@ -52,7 +51,7 @@ class Baidu_Translate(object):
             "query": self.query,
             "from": self.froms,
             "to": self.to,
-            "token": "6fd9079d741adce0cc8cc1336220dc0b",
+            "token": "e1ee573767bc751d60d05a768a71d960",
             "sign": sign
         }
         # 返回字典
