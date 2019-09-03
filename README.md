@@ -16,7 +16,7 @@
 * ## [chick here to test](https://github.com/SunRelease/Spider_crawler/blob/master/README-Test.md)
 
 
-# [**Install Python Package**](https://github.com/SunRelease/Spider_crawler/edit/master/requirments.txt)
+# [**Install Python Package**](https://github.com/SunRelease/Spider_crawler/blob/master/requirments.txt)
 ```
 windows or linux :pip install -r .\requirment.txt
 ```
