@@ -34,9 +34,17 @@
 
 > * [GUI-下载](https://www.lanzous.com/i4htgta)
 
+
+- [x] [Express-优化版](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express2.0.py)
+
+> * 使用pyqt5库进行框架构建
+
+> * 优化GUI界面(update 9-03)
+
+
 ---
 
-- [x] [Express100 -官网版 ](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express100.py)
+- [x] [Express100 -官网版](https://github.com/SunRelease/Spider_crawler/blob/master/Express/Express100.py)
 
 > * 对快递100进行官网查询
 
