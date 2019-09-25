@@ -33,7 +33,7 @@
 
 * ## GUI新版
 
-![AzSu7t4.gif](https://img2018.cnblogs.com/blog/1591211/201909/1591211-20190925224011183-305434568.gif)
+![uelqVx.gif](https://s2.ax1x.com/2019/09/25/uelqVx.gif)
 
 
 ----
