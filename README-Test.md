@@ -32,7 +32,9 @@
 ![AzSu7t.gif](https://s2.ax1x.com/2019/04/17/AzSu7t.gif)
 
 * ## GUI新版
-![mzuOJK.gif](https://s2.ax1x.com/2019/08/31/mzuOJK.gif)
+
+![](https://img2018.cnblogs.com/blog/1591211/201909/1591211-20190925224011183-305434568.gif)
+
 
 ----
 * ## **电脑图片收集**
