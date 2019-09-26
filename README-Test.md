@@ -33,7 +33,7 @@
 
 * ## GUI新版
 
-![uelqVx.gif](https://s2.ax1x.com/2019/09/25/uelqVx.gif)
+![uelqVx.gif](https://github.com/SunRelease/Spider_crawler/blob/master/Source/Translate.gif)
 
 
 ----
