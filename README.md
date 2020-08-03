@@ -37,6 +37,8 @@ windows or linux :pip install -r .\requirment.txt
 
 - [Image_Upload](#Img_Upload)
 
+- [Tieba](#Tieba) 
+
 <h2 id="Picture_spider">Picture_spider</h2>
 
 > ## [Picture_spider(图片抓取)](https://github.com/SunRelease/Spider_crawler/tree/master/Picture_spider)
@@ -144,6 +146,16 @@ windows or linux :pip install -r .\requirment.txt
 ### [chick here to read README](https://github.com/SunRelease/Spider_crawler/blob/master/Img_upload/README_upload.md)
 
 > 1.进行图床解析
+
+> 2.详情见README
+
+<h2 id="Tieba">Tieba签到</h2>
+
+> ## [Tieba签到](https://github.com/SunRelease/Spider_crawler/tree/master/TieBa)
+
+### [chick here to read README](https://github.com/SunRelease/Spider_crawler/blob/master/TieBa/README-tieba.md)
+
+> 1.进行百度贴吧签到
 
 > 2.详情见README
 
